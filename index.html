@@ -18,16 +18,17 @@
 
         <nav>
             <h2>Sections:</h2>
-            Present<br>
-            Agenda<br>
-            Meeting Notes<br>
-            Conclusion
+                <a href="#Present">Present</a><br>
+                <a href="#Agenda">Agenda</a><br>
+                <a href="#Meeting Notes">Meeting Notes</a><br>
+                <a href="#Conclusion">Conclusion</a><br>
+                <a href="#Extra"> Extra</a><br>
         </nav>
-        <section>
+        <section id="Present">
             <h2>Present:</h2>
             <p>Paul Nguyen</p>
         </section>
-        <section>
+        <section id="Agenda">
             <h2>Agenda:</h2>
             <img src="https://www.computerhope.com/jargon/h/html-head.jpg" 
             alt="html image" width="150" height="150">
@@ -40,7 +41,7 @@
                 <source src="Pexels Videos 2516160.mp4" type="video/mp4">
             </video>
         </section>
-        <main>
+        <main id="Meeting Notes">
             <h2>Meeting Notes:</h2>
             <ul>
                 <li>The head element will not be displayed to 
@@ -60,9 +61,15 @@
                 Still visually the same.
                 (ex. <i>italics</i> vs <em>
                 importance</em>)</li>
+                <li><details>
+                    <summary>Details and Summary tag</summary>
+                    <p>Summary tag is usually acompanies
+                    tag to be the visible header of the details</p>
+                </details></li>
             </ul>
         </main>
-        <section>
+
+        <section id="Conclusion">
             <h2>Conclusion:</h2>
             <p>
                 HTML is a very interesting language.
@@ -74,6 +81,41 @@
                 <source src="fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.mp3"
                 type="audio/mpeg">
             </audio>
+        </section>
+
+        <section id="Extra">
+            <h2>Extra:</h2>
+            <form>
+                <fieldset>
+                    <label>Favorite Food:</label>
+                    <input type="text"><br>
+                    <label>Why is this your favorite food:</label>
+                    <textarea rows="4" cols="50">___ is my favorite because...</textarea><br>
+                    <label>Favorite Drink:</label>
+                    <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <label>Favorite Programming language in list:</label>
+                    <input list="language" name="language">
+                    <datalist id="language">
+                      <option value="C++">
+                      <option value="Java">
+                      <option value="Python">
+                    </datalist>
+                    <input type="submit">
+                </fieldset>
+                <fieldset>
+                    <label>Is water wet</label>
+                    <select>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <button type="button">Do not click</button>
+                </fieldset>
+                
+            </form>
         </section>
 
         <hr>
